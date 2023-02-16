@@ -11,13 +11,13 @@ use DB;
 class RoleController extends Controller
 {
 
-  function __construct()
-  {
-    $this->middleware('permission:permissions', ['only' => ['index']]);
-    $this->middleware('permission:add-role', ['only' => ['create', 'store']]);
-    $this->middleware('permission:edit-role', ['only' => ['edit', 'update']]);
-    $this->middleware('permission:delete-role', ['only' => ['destroy']]);
-  }
+//   function __construct()
+//   {
+//     $this->middleware('permission:permissions', ['only' => ['index']]);
+//     $this->middleware('permission:add-role', ['only' => ['create', 'store']]);
+//     $this->middleware('permission:edit-role', ['only' => ['edit', 'update']]);
+//     $this->middleware('permission:delete-role', ['only' => ['destroy']]);
+//   }
 
   public function index(Request $request)
   {

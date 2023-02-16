@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 
 class DirecteurController extends Controller
 {
-  function __construct()
-  {
-    $this->middleware('permission:directeurrs', ['only' => ['index']]);
-    $this->middleware('permission:add-directeur', ['only' => ['create', 'store']]);
-    $this->middleware('permission:edit-directeur', ['only' => ['edit', 'update']]);
-    $this->middleware('permission:delete-directeur', ['only' => ['destroy']]);
-  }
+//   function __construct()
+//   {
+//     $this->middleware('permission:directeurrs', ['only' => ['index']]);
+//     $this->middleware('permission:add-directeur', ['only' => ['create', 'store']]);
+//     $this->middleware('permission:edit-directeur', ['only' => ['edit', 'update']]);
+//     $this->middleware('permission:delete-directeur', ['only' => ['destroy']]);
+//   }
 
   public function index()
   {

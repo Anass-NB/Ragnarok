@@ -1,13 +1,17 @@
 <?php
 
+use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\StudentController as ApiStudentController;
 use App\Http\Controllers\DirecteurController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ResponsableController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\StudentController;
+
 use App\Http\Controllers\UserController;
 use App\Mail\HelloMail;
 use App\Models\Student;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
@@ -39,6 +43,8 @@ Route::post('/postuler/{id}', [App\Http\Controllers\HomeController::class, 'post
 
 
 Route::get("students", [StudentController::class, "index"])->name("all_users")->middleware('auth');;
+Route::get("get-pdf", [StudentController::class, "getPdf"])->name("get.pdf")->middleware('auth');;
+Route::get("get-excel", [StudentController::class, "getExcel"])->name("get.excel")->middleware('auth');;
 Route::get("responsables", [ResponsableController::class, "index"])->name("all_responsables")->middleware('auth');;
 Route::get("directeurs", [DirecteurController::class, "index"])->name("all_directeurs")->middleware('auth');;
 
@@ -56,3 +62,7 @@ Route::get("livewire", function () {
 Route::get('sendmail', function () {
     Mail::to("anassnbbnnb@gmail.com")->send(new HelloMail());
 });
+
+
+
+

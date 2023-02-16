@@ -23,41 +23,41 @@
           </a>
         </li>
         {{-- Student --}}
-        @can('students')
-          <li class="nav-item">
-            <a class="nav-link " href="{{ route('all_users') }}">
-              <div
-                class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-              </div>
-              <span class="nav-link-text ms-1">Students</span>
-            </a>
-          </li>
-        @endcan
+        {{-- @can('students') --}}
+        <li class="nav-item">
+          <a class="nav-link " href="{{ route('all_users') }}">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Students</span>
+          </a>
+        </li>
+        {{-- @endcan --}}
         {{-- Responsables Taha --}}
-        @can('responsables')
-          <li class="nav-item">
-            <a class="nav-link " href="{{ route('all_responsables') }}">
-              <div
-                class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
-              </div>
-              <span class="nav-link-text ms-1">Responsables</span>
-            </a>
-          </li>
-        @endcan
+        {{-- @can('responsables') --}}
+        <li class="nav-item">
+          <a class="nav-link " href="{{ route('all_responsables') }}">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Responsables</span>
+          </a>
+        </li>
+        {{-- @endcan --}}
         {{-- Directeurs Simo --}}
-        @can('directeurrs')
-          <li class="nav-item">
-            <a class="nav-link " href="{{ route('all_directeurs') }}">
-              <div
-                class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="ni ni-app text-info text-sm opacity-10"></i>
-              </div>
-              <span class="nav-link-text ms-1">Directeurs</span>
-            </a>
-          </li>
-        @endcan
+        {{-- @can('directeurrs') --}}
+        <li class="nav-item">
+          <a class="nav-link " href="{{ route('all_directeurs') }}">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-app text-info text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Directeurs</span>
+          </a>
+        </li>
+        {{-- @endcan --}}
         {{-- RTL --}}
         {{-- <li class="nav-item">
           <a class="nav-link " href="./pages/rtl.html">
@@ -71,50 +71,51 @@
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
         </li>
-        @can('permissions')
-          <li class="nav-item">
-            <a class="nav-link " href="{{ route('roles.index') }}">
-              <div
-                class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
-              </div>
-              <span class="nav-link-text ms-1">Permissions</span>
-            </a>
-          </li>
-        @endcan
-        @can('add-role')
-          <li class="nav-item">
-            <a class="nav-link " href="{{ route('roles.create') }}">
-              <div
-                class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
-              </div>
-              <span class="nav-link-text ms-1">Add role</span>
-            </a>
-          </li>
-        @endcan
-        @can('permissions')
-          <li class="nav-item">
-            <a class="nav-link " href="{{ route('users.index') }}">
-              <div
-                class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
-              </div>
-              <span class="nav-link-text ms-1">Users</span>
-            </a>
-          </li>
-        @endcan
-        @can('add-role')
-          <li class="nav-item">
-            <a class="nav-link " href="{{ route('users.create') }}">
-              <div
-                class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
-              </div>
-              <span class="nav-link-text ms-1">Add User</span>
-            </a>
-          </li>
-        @endcan
+        {{-- @can('permissions') --}}
+        <li class="nav-item">
+          <a class="nav-link " href="{{ route('roles.index') }}">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Permissions</span>
+          </a>
+        </li>
+        {{-- @endcan --}}
+        {{-- @can('add-role') --}}
+        <li class="nav-item">
+          <a class="nav-link " href="{{ route('roles.create') }}">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Add role</span>
+          </a>
+        </li>
+        {{-- @endcan --}}
+        {{-- @can('permissions') --}}
+        <li class="nav-item">
+          <a class="nav-link " href="{{ route('users.index') }}">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Users</span>
+          </a>
+        </li>
+        {{-- @endcan --}}
+        {{-- @can('add-role') --}}
+        <li class="nav-item">
+          <a class="nav-link " href="{{ route('users.create') }}">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Add User</span>
+          </a>
+        </li>
+        {{-- @endcan --}}
+        {{-- Livewire --}}
         <li class="nav-item">
           <a class="nav-link " href="{{ url('livewire') }}">
             <div
@@ -122,6 +123,15 @@
               <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Livewire Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{{ url('/sendmail') }}">
+            <div
+              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Gmail send mail</span>
           </a>
         </li>
       </ul>
